@@ -57,8 +57,6 @@ public static void main(String[] args){
     ServiceEvent eventsService=new ServiceEvent();
     System.out.println("la liste de dons : ---------------------");
     sc.getDons();
-    Event myEvent=new Event(2,"brabbi ekhedmi","helloooo",new Date(),new Date(),"gaming","tesira",galleryImages);
-    eventsService.addEvent(myEvent);
     System.out.println(" la liste de tous le events ----------");
     eventsService.getAllEvents();
 

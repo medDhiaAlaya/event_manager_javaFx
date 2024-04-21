@@ -4,32 +4,58 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="538.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.autismo.controllers.AddEvent">
-    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b8d8f7" height="274.0" layoutX="32.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" width="536.0" />
-    <TextField fx:id="tfTitle" layoutX="145.0" layoutY="98.0" prefHeight="26.0" prefWidth="394.0" />
-    <TextField fx:id="tfType" layoutX="145.0" layoutY="137.0" prefHeight="26.0" prefWidth="394.0" />
-    <TextField fx:id="tfDescription" accessibleRole="TEXT_AREA" layoutX="145.0" layoutY="172.0" prefHeight="72.0" prefWidth="394.0" />
+    <!-- Background Rectangle -->
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#f4f4f4" height="538.0" width="841.0" />
 
-    <Label layoutX="56.0" layoutY="141.0" text="Type" />
-    <Label layoutX="57.0" layoutY="176.0" text="Descriptions" />
-    <Button layoutX="505.0" layoutY="360.0" mnemonicParsing="false" onAction="#add_button" text="Ajouter" />
-    <Label layoutX="57.0" layoutY="102.0" text="Titre" textFill="#181717" />
-    <Button layoutX="410.0" layoutY="360.0" mnemonicParsing="false" onAction="#display_btn" text="Afficher" />
-    <Label layoutX="57.0" layoutY="274.0" text="date de debut" />
-    <Label layoutX="61.0" layoutY="312.0" text="date de fin" />
-    <DatePicker fx:id="tfDateToStart" layoutX="147.0" layoutY="270.0" prefHeight="26.0" prefWidth="394.0" />
-    <DatePicker fx:id="tfDateToEnd" layoutX="148.0" layoutY="308.0" prefHeight="26.0" prefWidth="394.0" />
-    <Text layoutX="157.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un evenemment" textAlignment="CENTER">
+    <!-- Title Text -->
+    <Text layoutX="25.0" layoutY="30.0" stroke="BLACK" strokeWidth="0.5" text="Ajouter un événement" textAlignment="CENTER">
         <font>
-          <Font name="Montserrat SemiBold" size="25.0" />
+            <Font name="Arial" size="24.0" />
         </font>
     </Text>
-   <Button layoutX="636.0" layoutY="360.0" mnemonicParsing="false" onAction="#upload_image_button" text="upload_image_button" />
-   <ImageView fx:id="image_view" fitHeight="193.0" fitWidth="200.0" layoutX="602.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+
+    <!-- GridPane for Form Elements -->
+    <GridPane hgap="10" layoutX="25.0" layoutY="70.0" prefHeight="356.0" prefWidth="791.0" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints />
+        </rowConstraints>
+        <!-- Labels -->
+        <Label text="Titre" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Type" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="Descriptions" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label text="Date de début" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label text="Date de fin" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <!-- TextFields -->
+        <TextField fx:id="tfTitle" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="tfType" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="tfDescription" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <!-- DatePickers -->
+        <DatePicker fx:id="tfDateToStart" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <DatePicker fx:id="tfDateToEnd" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <!-- Buttons -->
+        <Button fx:id="addButton" onAction="#add_button" text="Ajouter" GridPane.rowIndex="6" />
+        <Button fx:id="displayButton" onMouseClicked="#goToDisplay" text="Afficher" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Button fx:id="uploadImageButton" onAction="#upload_image_button" text="Upload Image" GridPane.rowIndex="5" />
+      <Text fx:id="imagePathText" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    </GridPane>
 </AnchorPane>

@@ -1,0 +1,21 @@
+.event-card {
+    -fx-background-color: #ffffff; /* Background color of the card */
+    -fx-padding: 10px; /* Padding around the card */
+    -fx-border-color: #cccccc; /* Border color of the card */
+    -fx-border-width: 1px; /* Border width of the card */
+    -fx-border-radius: 5px; /* Border radius of the card */
+}
+
+/* Style for the title label */
+.event-card .title-label {
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 14px; /* Font size */
+}
+
+/* Style for the description label */
+.event-card .description-label {
+    -fx-font-size: 12px; /* Font size */
+    -fx-text-fill: #666666; /* Text color */
+}
+
+/* Add more styles for other UI elements as needed */

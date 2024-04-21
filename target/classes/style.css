@@ -1,0 +1,41 @@
+.root {
+    -fx-background-color: #2c3e50; /* Couleur de fond */
+}
+
+#searchTextField, #searchButton {
+    -fx-background-color: #3498db; /* Couleur du champ de recherche et du bouton */
+    -fx-text-fill: white; /* Couleur du texte */
+}
+
+.label, .table-column {
+    -fx-text-fill: black; /* Couleur du texte des labels */
+}
+
+#dateTextField, #contenuTextField, #fichierTextField, #likesTextField, #dislikesTextField, #titreTextField, #commentTextField {
+    -fx-background-color: #34495e; /* Couleur des champs de texte */
+    -fx-text-fill: white; /* Couleur du texte */
+}
+
+#openMapButton {
+    -fx-background-color: #3498db; /* Couleur du bouton ouvrir la carte */
+    -fx-text-fill: white; /* Couleur du texte */
+}
+
+.button, #editbtn, #exportButton {
+    -fx-background-color: #3498db; /* Couleur des autres boutons */
+    -fx-text-fill: white; /* Couleur du texte */
+}
+
+#postTab {
+    -fx-background-color: #34495e; /* Couleur de fond du tableau */
+    -fx-text-fill: white; /* Couleur du texte */
+}
+
+.table-column {
+    -fx-text-fill: black; /* Couleur du texte des colonnes du tableau */
+}
+
+#dateTextField, #contenuTextField, #fichierTextField, #likesTextField, #dislikesTextField, #titreTextField, #commentTextField {
+    -fx-background-color: #ffffff; /* Couleur des champs de texte */
+    -fx-text-fill: black; /* Couleur du texte */
+}

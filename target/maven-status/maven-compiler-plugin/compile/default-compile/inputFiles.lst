@@ -1,5 +1,6 @@
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\interfaces\IParticipation.java
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\services\ServiceDon.java
+C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\controllers\AddDon.java
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\interfaces\IEvent.java
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\models\Participation.java
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\models\Don.java
@@ -12,4 +13,4 @@ C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\Ma
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\services\ServiceEvent.java
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\controllers\Home.java
 C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\controllers\AddEvent.java
-C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\controllers\ShowEvents.java
+C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo\controllers\DisplayEvents.java

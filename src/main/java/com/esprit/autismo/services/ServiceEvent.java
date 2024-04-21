@@ -5,8 +5,7 @@ import com.esprit.autismo.utiles.MyDataBase;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-
-
+import java.util.List;
 
 
 public class ServiceEvent implements IEvent<Event> {
@@ -49,7 +48,7 @@ public class ServiceEvent implements IEvent<Event> {
     }
 
     @Override
-    public ArrayList<Event> getAllEvents() {
+    public List<Event> getAllEvents() {
         System.out.println("get all events 1");
         ArrayList<Event> events = new ArrayList<>();
         String qry ="SELECT * FROM `event`";
@@ -66,7 +65,7 @@ public class ServiceEvent implements IEvent<Event> {
                 e.setStart_date(rs.getDate("start_date"));
                 e.setEnd_date(rs.getDate("end_date"));
                 e.setBanner(rs.getString("banner"));
-                e.setGalerie(Arrays.asList((String[]) rs.getArray("gallery").getArray()));
+                //e.setGalerie(Arrays.asList((String[]) rs.getArray("gallery").getArray()));
                 //e.setBanner(rs.getString("dons"));
                 events.add(e);
             }
