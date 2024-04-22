@@ -50,8 +50,8 @@
         <TextField fx:id="tfEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <!-- Buttons -->
         <Button fx:id="addButton" onAction="#add_button" prefHeight="26.0" prefWidth="355.0" text="Ajouter" GridPane.rowIndex="6" />
-      <TextField fx:id="tfArgent" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <TextField fx:id="tfMessage" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button fx:id="cancelButton" onMouseClicked="#cancel" prefHeight="26.0" prefWidth="439.0" text="Annuler" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TextField fx:id="tfArgent" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="tfMessage" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button fx:id="display_dons" onMouseClicked="#displayDons" prefHeight="26.0" prefWidth="439.0" text="afficher dons" GridPane.columnIndex="1" GridPane.rowIndex="6" />
     </GridPane>
 </AnchorPane>

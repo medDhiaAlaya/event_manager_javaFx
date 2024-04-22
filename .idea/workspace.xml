@@ -5,24 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11bdbc1e-36d5-4723-b191-6a694f003f61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/img/kid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/img/logo 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/img/logo2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddDon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddDon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayEvents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/ShowEvents.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/interfaces/IEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/interfaces/IEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/addDon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/addDon.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/addEvent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/addEvent.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/showEvents.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/addEvent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/addEvent.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/ShowEvents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/interfaces/IEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/interfaces/IEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/showEvents.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/displayEvents.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/displayEvents.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/addDon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/addDon.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddDon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddDon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayEvents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/displayEvents.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/displayEvents.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,7 @@
         <option value="Interface" />
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -55,6 +59,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/Pi-Project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -66,6 +71,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\resources" />
+      <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources\img" />
       <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources" />
       <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo" />
     </key>
@@ -116,7 +123,8 @@
       <workItem from="1713127314205" duration="12708000" />
       <workItem from="1713471470391" duration="22839000" />
       <workItem from="1713627343030" duration="24385000" />
-      <workItem from="1713728918368" duration="2952000" />
+      <workItem from="1713728918368" duration="13821000" />
+      <workItem from="1713770215494" duration="9012000" />
     </task>
     <servers />
   </component>

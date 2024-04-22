@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="538.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.autismo.controllers.AddEvent">
+<AnchorPane prefHeight="538.0" prefWidth="841.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.autismo.controllers.AddEvent">
     <!-- Background Rectangle -->
     <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#f4f4f4" height="538.0" width="841.0" />
 
@@ -46,7 +46,7 @@
         <Label text="Date de début" GridPane.columnIndex="0" GridPane.rowIndex="3" />
         <Label text="Date de fin" GridPane.columnIndex="0" GridPane.rowIndex="4" />
         <!-- TextFields -->
-        <TextField fx:id="tfTitle" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="tfTitle" styleClass="text-field" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="0" />
         <TextField fx:id="tfType" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <TextField fx:id="tfDescription" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <!-- DatePickers -->

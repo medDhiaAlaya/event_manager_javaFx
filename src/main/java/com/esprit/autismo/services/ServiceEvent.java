@@ -1,5 +1,6 @@
 package com.esprit.autismo.services;
 import com.esprit.autismo.interfaces.IEvent;
+import com.esprit.autismo.models.Don;
 import com.esprit.autismo.models.Event;
 import com.esprit.autismo.utiles.MyDataBase;
 import java.sql.*;
@@ -82,7 +83,6 @@ public class ServiceEvent implements IEvent<Event> {
 
     @Override
     public void deleteEvent(Event event) {
-
         String reqD="DELETE FROM `event` WHERE `id`=?";
         try{
 
@@ -92,7 +92,7 @@ public class ServiceEvent implements IEvent<Event> {
             pstm.setInt(1,event.getId());
             int rows=pstm.executeUpdate();
             if(rows>0){
-                System.out.println("le rendezVous selectioné a été supprimé avec succés");
+                System.out.println("le don selectioné a été supprimé avec succés");
             }
         }catch (SQLException e){
             System.err.println(e.getMessage());

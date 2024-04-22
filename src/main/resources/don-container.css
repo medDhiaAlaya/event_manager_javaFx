@@ -1,0 +1,12 @@
+.don-container {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-padding: 10px; /* Padding */
+    -fx-border-color: #cccccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-spacing: 5px; /* Spacing between child nodes */
+}
+
+.don-container > Label {
+    -fx-font-size: 14px; /* Font size for labels */
+}

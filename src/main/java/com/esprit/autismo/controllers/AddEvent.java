@@ -2,6 +2,7 @@ package com.esprit.autismo.controllers;
 
 import com.esprit.autismo.models.Event;
 import com.esprit.autismo.services.ServiceEvent;
+import com.google.protobuf.Empty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -73,7 +74,7 @@ public class AddEvent {
         File selectedFile = fileChooser.showOpenDialog(null);
         if (selectedFile != null) {
             Image image = new Image(selectedFile.toURI().toString());
-            imagePathText.setText(selectedFile.getPath());
+            imagePathText.setText(selectedFile.getAbsolutePath());
             e.setBanner(selectedFile.getPath());
             //image_view.setImage(image);
             //image_view.setFitWidth(200);
