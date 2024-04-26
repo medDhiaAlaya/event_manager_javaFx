@@ -1,7 +1,7 @@
 package com.esprit.autismo.services;
 
 import com.esprit.autismo.interfaces.IParticipation;
-import com.esprit.autismo.models.Participation;
+import com.esprit.autismo.models.Participant;
 import com.esprit.autismo.utiles.MyDataBase;
 
 import java.sql.Connection;
@@ -9,19 +9,19 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class ServiceParticipation implements IParticipation<Participation> {
+public class ServiceParticipation implements IParticipation <Participant> {
     Connection cnx;
     void serviceParticipation(){
         cnx= MyDataBase.getInstance().getCnx();
     }
 
     @Override
-    public boolean deleteParticipation(Participation p) {
+    public boolean deleteParticipation(Participant p) {
         String qry = "DELETE FROM  WHERE `id`=?";
         try {
             PreparedStatement pstm = cnx.prepareStatement(qry);
 
-            pstm.setInt(1, p.getId());
+            pstm.setLong(1, p.getId());
 
             pstm.executeUpdate();
             System.out.println("Child deleted with success");
@@ -36,17 +36,17 @@ public class ServiceParticipation implements IParticipation<Participation> {
 
 
     @Override
-    public void addParticipation(Participation participation) {
+    public void addParticipation(Participant participation) {
 
     }
 
     @Override
-    public ArrayList<Participation> getAllParticippation() {
+    public ArrayList<Participant> getAllParticippation() {
         return null;
     }
 
     @Override
-    public void getParticipationById(Participation participation) {
+    public void getParticipationById(Participant participation) {
 
     }
 }

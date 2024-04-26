@@ -30,9 +30,9 @@ public class DisplayDons {
                 donContainer.getStyleClass().add("don-container");
 
                 Label idLabel = new Label("ID: " + don.getId());
-                Label firstNameLabel = new Label("First Name: " + don.getFirst_name_donor());
-                Label lastNameLabel = new Label("Last Name: " + don.getLast_name_donor());
-                Label amountLabel = new Label("Amount Donated: " + don.getDonated_money());
+                Label firstNameLabel = new Label("First Name: " + don.getFirstNameDonor());
+                Label lastNameLabel = new Label("Last Name: " + don.getLastNameDonor());
+                Label amountLabel = new Label("Amount Donated: " + don.getDonatedMoney());
                 Button deleteButton = new Button("Delete");
 
                 deleteButton.setOnAction(event -> serviceDon.deleteDon(don));

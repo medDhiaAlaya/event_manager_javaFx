@@ -51,14 +51,56 @@ public static void main(String[] args){
     galleryImages.add("image2.jpg");
     galleryImages.add("image3.jpg");
     //Event e= new Event(1,"java event","descriptoon java", new Date());
-    Don d=new Don(3,1,"samir","alaya","samir@gmail.com","hello","paypal",50);
     ServiceDon sc= new ServiceDon();
-    sc.addDon(d);
     ServiceEvent eventsService=new ServiceEvent();
     System.out.println("la liste de dons : ---------------------");
     sc.getDons();
     System.out.println(" la liste de tous le events ----------");
     eventsService.getAllEvents();
+    System.out.println("get event by id");
+    Event t=eventsService.getEventById(1);
+    System.out.println("deleting event --------");
+    //eventsService.deleteEvent(1);
+    System.out.println("add event");
+    Event eventToAdd = new Event();
+    eventToAdd.setTitle("Test Event");
+    eventToAdd.setStartDate(new Date());
+    eventToAdd.setEndDate(new Date());
+    eventToAdd.setType("Test Type");
+    eventToAdd.setDescription("This is a test event");
+    eventToAdd.setBanner("test_banner.jpg");
+    //eventsService.addEvent(eventToAdd);
+
+    System.out.println("code de update event");
+    Event updatedEvent = new Event();
+    updatedEvent.setId(4L);
+    updatedEvent.setTitle("Updated Event Title");
+    updatedEvent.setStartDate(new Date()); // Set start date to current date
+    updatedEvent.setEndDate(new Date()); // Set end date to current date
+    updatedEvent.setType("Updated Type");
+    updatedEvent.setDescription("This is an updated event description");
+    updatedEvent.setBanner("updated_banner.jpg");
+
+    // Call the updateEvent method to update the event in the database
+    eventsService.updateEvent(updatedEvent);
+
+    System.out.println("testing add don -------------------------------------------");
+    // Create a new Don object to add
+    Don donToAdd = new Don();
+    // Assuming you have set all necessary attributes of the Don object
+
+    donToAdd.setIdEvent(Math.toIntExact(t.getId()));
+    donToAdd.setFirstNameDonor("John");
+    donToAdd.setLastNameDonor("Doe");
+    donToAdd.setEmailDonor("john.doe@example.com");
+    donToAdd.setMsgDonor("This is a test donation");
+    donToAdd.setMethode("Credit Card");
+    donToAdd.setDonatedMoney(100.0); // Assuming the donated amount is 100.0
+
+    // Call the addDon method to add the donation to the database
+    sc.addDon(donToAdd);
+
+
 
 
 

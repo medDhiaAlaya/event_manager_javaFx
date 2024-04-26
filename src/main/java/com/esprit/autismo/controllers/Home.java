@@ -17,7 +17,7 @@ public class Home extends Application {
     @Override
     public void start(Stage primaryStage) {
         //FXMLLoader fxml=new FXMLLoader(getClass().getResource("/addEvent.fxml"));
-        FXMLLoader fxml=new FXMLLoader(getClass().getResource("/addDon.fxml"));
+        FXMLLoader fxml=new FXMLLoader(getClass().getResource("/addEvent.fxml"));
 
         try {
 

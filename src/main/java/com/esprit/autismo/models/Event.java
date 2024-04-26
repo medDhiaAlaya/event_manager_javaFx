@@ -1,48 +1,54 @@
 package com.esprit.autismo.models;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-public class Event {
-    private int id;
-    private int id_super_admin_id;
-    //private List<Don> dons;
+public class Event  {
+
+    private Long id;
     private String title;
-    private String description;
-    private Date start_date;
-    private Date end_date;
+
+    private java.util.Date startDate;
+
+    private java.util.Date endDate;
+
     private String type;
+
+    private String description;
+
     private String banner;
-    private List<String> galerie;
 
-    public Event(int id, String title, String description, Date start_date, Date end_date, String type, String banner, List<String> galerie) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.start_date = start_date;
-        this.end_date = end_date;
-        this.type = type;
-        this.banner = banner;
-        this.galerie = galerie;
-    }
+    private List<String> gallery = new ArrayList<>();
 
-    public Event() {
+    //private User idSuperAdmin;
 
-    }
 
-    public Event(int i, String javaEvent, String descriptoonJava, Date date) {
 
-    }
+    private List<Don> dons = new ArrayList<>();
 
-    public int getId() {
+
+
+
+
+
+    private Collection<Participant> participations = new ArrayList<>();
+
+    // Constructors, getters, and setters
+
+    public Event() {}
+
+    // Getters and setters
+    // Id
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
+    // Title
     public String getTitle() {
         return title;
     }
@@ -51,30 +57,25 @@ public class Event {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    // Start Date
+    public java.util.Date getStartDate() {
+        return startDate;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setStartDate(java.util.Date startDate) {
+        this.startDate = startDate;
     }
 
-    public java.sql.Date getStart_date() {
-        return (java.sql.Date) start_date;
+    // End Date
+    public java.util.Date getEndDate() {
+        return endDate;
     }
 
-    public void setStart_date(Date start_date) {
-        this.start_date = start_date;
+    public void setEndDate(java.util.Date endDate) {
+        this.endDate = endDate;
     }
 
-    public Date getEnd_date() {
-        return end_date;
-    }
-
-    public void setEnd_date(Date end_date) {
-        this.end_date = end_date;
-    }
-
+    // Type
     public String getType() {
         return type;
     }
@@ -83,6 +84,16 @@ public class Event {
         this.type = type;
     }
 
+    // Description
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    // Banner
     public String getBanner() {
         return banner;
     }
@@ -91,26 +102,56 @@ public class Event {
         this.banner = banner;
     }
 
-    public List<String> getGalerie() {
-        return galerie;
+    // Gallery
+    public List<String> getGallery() {
+        return gallery;
     }
 
-    public void setGalerie(List<String> galerie) {
-        this.galerie = galerie;
+    public void setGallery(List<String> gallery) {
+        this.gallery = gallery;
+    }
+/*
+    // IdSuperAdmin
+    public User getIdSuperAdmin() {
+        return idSuperAdmin;
     }
 
+    public void setIdSuperAdmin(User idSuperAdmin) {
+        this.idSuperAdmin = idSuperAdmin;
+    }
+    */
+
+    // Dons
+    public List<Don> getDons() {
+        return dons;
+    }
+
+    public void setDons(List<Don> dons) {
+        this.dons = dons;
+    }
+
+    // Participations
+    public Collection<Participant> getParticipations() {
+        return participations;
+    }
+
+    public void setParticipations(Collection<Participant> participations) {
+        this.participations = participations;
+    }
 
     @Override
     public String toString() {
         return "Event{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", start_date=" + start_date +
-                ", end_date=" + end_date +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
                 ", type='" + type + '\'' +
+                ", description='" + description + '\'' +
                 ", banner='" + banner + '\'' +
-                ", galerie=" + galerie +
+                ", gallery=" + gallery +
+                ", dons=" + dons +
+                ", participations=" + participations +
                 '}';
     }
 }

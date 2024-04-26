@@ -9,8 +9,8 @@ import java.util.List;
 public interface IEvent<E> {
     void addEvent(E e);
     List<E> getAllEvents();
-    void deleteEvent(E e) throws SQLException;
-    void updateEvent(E e);
-    Event findEvent(int id);
+    void updateEvent(Event event);
+    E getEventById(long eventId);
+    void deleteEvent(long eventId);
 
 }

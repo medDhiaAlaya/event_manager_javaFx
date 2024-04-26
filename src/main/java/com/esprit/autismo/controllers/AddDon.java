@@ -38,6 +38,13 @@ public class AddDon {
     @FXML
     private TextField tfPrenom;
 
+    private long eventId;
+
+    public void getEventId(long id){
+        eventId=id;
+
+    }
+
 
 
 
@@ -52,13 +59,13 @@ public class AddDon {
                 && validator.isNonEmpty(tfPrenom)) {
             Don d = new Don();
             d.setMethode("Stripe");
-            d.setId_event_id(1);
-            d.setFirst_name_donor(tfNom.getText());
-            d.setLast_name_donor(tfPrenom.getText());
-            d.setDonated_money(Integer.parseInt(tfArgent.getText()));
-            d.setMsg_donor(tfPrenom.getText());
-            d.setEmail_donor(tfEmail.getText());
-            d.setMsg_donor(tfMessage.getText());
+            d.setIdEvent((int) eventId);
+            d.setFirstNameDonor(tfNom.getText());
+            d.setLastNameDonor(tfPrenom.getText());
+            d.setDonatedMoney((double) Integer.parseInt(tfArgent.getText()));
+            d.setMsgDonor(tfPrenom.getText());
+            d.setEmailDonor(tfEmail.getText());
+            d.setMsgDonor(tfMessage.getText());
 
             try {
                 ServiceDon serviceDon = new ServiceDon();
@@ -105,4 +112,7 @@ public class AddDon {
             showAlert("Error", "Failed to load displayEvents.fxml");
         }
     }
+
+
+
 }

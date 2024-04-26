@@ -1,78 +1,89 @@
 package com.esprit.autismo.models;
 
-public class Don {
-    private int id;
-    private int id_event_id;
-    private String first_name_donor;
-    private String last_name_donor;
-    private String email_donor;
-    private String msg_donor;
+
+public class Don  {
+
+    private Long id;
+
+    private String firstNameDonor;
+
+    private String lastNameDonor;
+
+    private String emailDonor;
+
+    private String msgDonor;
+
     private String methode;
-    private int donated_money;
 
-    public Don(int id, int id_event_id, String first_name_donor, String last_name_donor, String email_donor, String msg_donor, String methode, int donated_money) {
-        this.id = id;
-        this.id_event_id = id_event_id;
-        this.first_name_donor = first_name_donor;
-        this.last_name_donor = last_name_donor;
-        this.email_donor = email_donor;
-        this.msg_donor = msg_donor;
-        this.methode = methode;
-        this.donated_money = donated_money;
-    }
+    private int idEvent;
 
-    public Don() {
+    private Double donatedMoney;
 
-    }
+    // Constructors, getters, and setters
 
-    public int getId() {
+    public Don() {}
+
+    // Getters and setters
+    // Id
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    @Override
+    public String toString() {
+        return "Don{" +
+                "id=" + id +
+                ", firstNameDonor='" + firstNameDonor + '\'' +
+                ", lastNameDonor='" + lastNameDonor + '\'' +
+                ", emailDonor='" + emailDonor + '\'' +
+                ", msgDonor='" + msgDonor + '\'' +
+                ", methode='" + methode + '\'' +
+                ", idEvent=" + idEvent +
+                ", donatedMoney=" + donatedMoney +
+                '}';
+    }
+
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getId_event_id() {
-        return id_event_id;
+    // FirstNameDonor
+    public String getFirstNameDonor() {
+        return firstNameDonor;
     }
 
-    public void setId_event_id(int id_event_id) {
-        this.id_event_id = id_event_id;
+    public void setFirstNameDonor(String firstNameDonor) {
+        this.firstNameDonor = firstNameDonor;
     }
 
-    public String getFirst_name_donor() {
-        return first_name_donor;
+    // LastNameDonor
+    public String getLastNameDonor() {
+        return lastNameDonor;
     }
 
-    public void setFirst_name_donor(String first_name_donor) {
-        this.first_name_donor = first_name_donor;
+    public void setLastNameDonor(String lastNameDonor) {
+        this.lastNameDonor = lastNameDonor;
     }
 
-    public String getLast_name_donor() {
-        return last_name_donor;
+    // EmailDonor
+    public String getEmailDonor() {
+        return emailDonor;
     }
 
-    public void setLast_name_donor(String last_name_donor) {
-        this.last_name_donor = last_name_donor;
+    public void setEmailDonor(String emailDonor) {
+        this.emailDonor = emailDonor;
     }
 
-    public String getEmail_donor() {
-        return email_donor;
+    // MsgDonor
+    public String getMsgDonor() {
+        return msgDonor;
     }
 
-    public void setEmail_donor(String email_donor) {
-        this.email_donor = email_donor;
+    public void setMsgDonor(String msgDonor) {
+        this.msgDonor = msgDonor;
     }
 
-    public String getMsg_donor() {
-        return msg_donor;
-    }
-
-    public void setMsg_donor(String msg_donor) {
-        this.msg_donor = msg_donor;
-    }
-
+    // Methode
     public String getMethode() {
         return methode;
     }
@@ -81,25 +92,21 @@ public class Don {
         this.methode = methode;
     }
 
-    public int getDonated_money() {
-        return donated_money;
+    // IdEvent
+    public int getIdEvent() {
+        return idEvent;
     }
 
-    public void setDonated_money(int donated_money) {
-        this.donated_money = donated_money;
+    public void setIdEvent(int idEvent) {
+        this.idEvent = idEvent;
     }
 
-    @Override
-    public String toString() {
-        return "Don{" +
-                "id=" + id +
-                ", id_event_id=" + id_event_id +
-                ", first_name_donor='" + first_name_donor + '\'' +
-                ", last_name_donor='" + last_name_donor + '\'' +
-                ", email_donor='" + email_donor + '\'' +
-                ", msg_donor='" + msg_donor + '\'' +
-                ", methode='" + methode + '\'' +
-                ", donated_money=" + donated_money +
-                '}';
+    // DonatedMoney
+    public Double getDonatedMoney() {
+        return donatedMoney;
+    }
+
+    public void setDonatedMoney(Double donatedMoney) {
+        this.donatedMoney = donatedMoney;
     }
 }

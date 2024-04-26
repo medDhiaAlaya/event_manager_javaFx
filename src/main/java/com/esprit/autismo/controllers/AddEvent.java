@@ -18,8 +18,11 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.sql.Date;
 
 public class AddEvent {
@@ -51,9 +54,9 @@ public class AddEvent {
         e.setType(tfType.getText());
 
         Date startDate = Date.valueOf(tfDateToStart.getValue());
-        e.setStart_date(startDate);
+        e.setStartDate(startDate);
         Date endDate = Date.valueOf(tfDateToEnd.getValue());
-        e.setEnd_date(endDate);
+        e.setEndDate(endDate);
 
         try{
             ServiceEvent serviceEvent=new ServiceEvent();
@@ -75,17 +78,22 @@ public class AddEvent {
         if (selectedFile != null) {
             Image image = new Image(selectedFile.toURI().toString());
             imagePathText.setText(selectedFile.getAbsolutePath());
-            e.setBanner(selectedFile.getPath());
+            e.setBanner(selectedFile.getName());
+// Define the path to the target directory
+            String targetFolderPath = "C:/Users/ASUS/Desktop/3 A MDA/javafx/autismo/src/main/resources/imgs";
+            File targetFolder = new File(targetFolderPath);
+            File newFile = new File(targetFolder, selectedFile.getName());
+            try {
+                Files.copy(selectedFile.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+
+
             //image_view.setImage(image);
             //image_view.setFitWidth(200);
             //image_view.setFitHeight(200);
         }
-        System.out.println(selectedFile.toURI().toString());
-        System.out.println(selectedFile.getPath());
-        System.out.println(selectedFile.getName());
-
-
-
     }
 
     private void showAlert(String title, String content) {

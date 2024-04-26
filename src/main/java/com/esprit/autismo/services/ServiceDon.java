@@ -26,14 +26,14 @@ public class ServiceDon implements IDon<Don> {
 
             while (rs.next()){
                 Don d = new Don();
-                d.setId(rs.getInt("id"));
-                d.setId_event_id(rs.getInt("id_event_id"));
-                d.setFirst_name_donor(rs.getString("first_name_donor"));
-                d.setLast_name_donor(rs.getString("last_name_donor"));
-                d.setEmail_donor(rs.getString("email_donor"));
-                d.setMsg_donor(rs.getString("msg_donor"));
+                d.setId((long) rs.getInt("id"));
+                //d.setIdEvent(rs.getObject("id_event_id"));
+                d.setFirstNameDonor(rs.getString("first_name_donor"));
+                d.setLastNameDonor(rs.getString("last_name_donor"));
+                d.setEmailDonor(rs.getString("email_donor"));
+                d.setMsgDonor(rs.getString("msg_donor"));
                 d.setMethode(rs.getString("methode"));
-                d.setDonated_money(rs.getInt("donated_money"));
+                d.setDonatedMoney((double) rs.getInt("donated_money"));
 
                 //e.setBanner(rs.getString("banner"));
                 //e.setGalerie((List<String>) rs.getArray("gallery"));
@@ -53,17 +53,17 @@ public class ServiceDon implements IDon<Don> {
 
     @Override
     public void addDon(Don don) {
-        String qry="INSERT INTO `don`(`id`, `id_event_id`, `first_name_donor`, `last_name_donor`, `email_donor`, `msg_donor`, `methode`, `donated_money`) VALUES (?,?,?,?,?,?,?,?)";
+        String qry="INSERT INTO `don`(`id_event_id`, `first_name_donor`, `last_name_donor`, `email_donor`, `msg_donor`, `methode`, `donated_money`) VALUES (?,?,?,?,?,?,?)";
         try{
             PreparedStatement pstm=cnx.prepareStatement(qry);
-            pstm.setInt(1,don.getId());
-            pstm.setInt(2,don.getId_event_id());
-            pstm.setString(3, don.getFirst_name_donor());
-            pstm.setString(4,don.getLast_name_donor());
-            pstm.setString(5,don.getEmail_donor());
-            pstm.setString(6,don.getMsg_donor());
-            pstm.setString(7,don.getMethode());
-            pstm.setInt(8,don.getDonated_money());
+            //pstm.setLong(1,don.getId());
+            pstm.setInt(1,don.getIdEvent());
+            pstm.setString(2, don.getFirstNameDonor());
+            pstm.setString(3,don.getLastNameDonor());
+            pstm.setString(4,don.getEmailDonor());
+            pstm.setString(5,don.getMsgDonor());
+            pstm.setString(6,don.getMethode());
+            pstm.setDouble(7,don.getDonatedMoney());
 
 
             pstm.executeUpdate();
@@ -83,7 +83,7 @@ public class ServiceDon implements IDon<Don> {
             PreparedStatement pstm=cnx.prepareStatement(reqD);
 
 
-            pstm.setInt(1,don.getId());
+            pstm.setInt(1, Math.toIntExact(don.getId()));
             int rows=pstm.executeUpdate();
             if(rows>0){
                 System.out.println("le don selectioné a été supprimé avec succés");
