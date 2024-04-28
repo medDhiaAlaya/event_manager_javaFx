@@ -6,35 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="11bdbc1e-36d5-4723-b191-6a694f003f61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/kid.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imgs/kid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/logo 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imgs/logo 1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imgs/logo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddDon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddDon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayDons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayDons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayEvents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/interfaces/IEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/interfaces/IEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/models/Don.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/models/Don.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/models/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/models/Participation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceDon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceDon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceParticipation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceParticipation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/utiles/validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/utiles/validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imgs/kid.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/kid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EventInterface.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddDon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddDon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayDons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayDons.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayEvents.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/interfaces/IEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/interfaces/IEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/models/Don.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/models/Don.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/models/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/models/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/models/Participation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceDon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceDon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceParticipation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceParticipation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/utiles/validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/utiles/validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/event_card.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/kid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/logo 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/logo2.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -68,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ASUS/Desktop/readyToWorkGRH",
+    "last_opened_file_path": "C:/Users/ASUS/Desktop/3 A MDA/javafx/autismo/src/main/resources/imgs",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -80,15 +69,18 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources\imgs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources\images" />
       <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources\imgs" />
       <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\resources" />
       <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources\img" />
       <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\resources" />
-      <recent name="C:\Users\ASUS\Desktop\3 A MDA\javafx\autismo\src\main\java\com\esprit\autismo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Home">
+  <component name="RunManager" selected="Application.Payment">
     <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.esprit.autismo.controllers.Home" />
       <module name="autismo" />
@@ -115,8 +107,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Payment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.esprit.autismo.controllers.Payment" />
+      <module name="autismo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.esprit.autismo.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Payment" />
         <item itemvalue="Application.Home" />
         <item itemvalue="Application.Main" />
       </list>
@@ -139,7 +145,7 @@
       <workItem from="1713978662629" duration="776000" />
       <workItem from="1714022695439" duration="5633000" />
       <workItem from="1714037057177" duration="4450000" />
-      <workItem from="1714079952133" duration="22035000" />
+      <workItem from="1714079952133" duration="58323000" />
     </task>
     <servers />
   </component>

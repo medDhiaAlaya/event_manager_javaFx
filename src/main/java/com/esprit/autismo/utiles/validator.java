@@ -24,5 +24,6 @@ public class validator {
         alert.setHeaderText(null);
         alert.setContentText(content);
         alert.showAndWait();
+
     }
 }

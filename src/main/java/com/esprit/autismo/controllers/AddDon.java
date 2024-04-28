@@ -71,9 +71,14 @@ public class AddDon {
                 ServiceDon serviceDon = new ServiceDon();
                 serviceDon.addDon(d);
                 validator.showAlert("Don Added", "The Don has been successfully added.");
+                goEvents();
+
+
+
             } catch (Exception eu) {
                 System.out.println(eu.getMessage());
                 validator.showAlert("Don failed", "An error occurred while adding the Don.");
+
             }
         } else {
             validator.showAlert("Invalid Input", "Please fill in all fields with valid information.");
@@ -112,6 +117,24 @@ public class AddDon {
             showAlert("Error", "Failed to load displayEvents.fxml");
         }
     }
+    public void goEvents() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/listEvent.fxml"));
+            Parent parent = loader.load();
+            ListEvent eventDisplay = loader.getController();
+            // displayEventsController.setData(data);
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            showAlert("Error", "Failed to load displayEvents.fxml");
+        }
+    }
+
+
+
 
 
 

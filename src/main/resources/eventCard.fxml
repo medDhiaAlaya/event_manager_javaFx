@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="cardEvent" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#OpenDetails" prefHeight="200.0" prefWidth="400.0" styleClass="Card" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.autismo.controllers.EventCard">
+    <children>
+        <ImageView fx:id="eventBanner" fitHeight="120.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="image_view" HBox.hgrow="NEVER">
+            <image>
+                <Image url="@images/kid.png" />
+            </image>
+        </ImageView>
+        <VBox prefHeight="200.0" prefWidth="222.0" spacing="8.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label fx:id="eventTitle" prefHeight="60.0" prefWidth="207.0" styleClass="name" text="Event title">
+                    <font>
+                        <Font name="Arial Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="eventType" text="type :">
+                    <font>
+                        <Font name="Arial Bold" size="14.0" />
+                    </font>
+                </Label>
+
+                <HBox alignment="CENTER_LEFT" spacing="18.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="detailsButton" mnemonicParsing="false" onAction="#detailsButton" styleClass="update-button" text="Plus de details" />
+                    </children>
+                </HBox>
+
+            </children>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <padding>
+                <Insets left="7.0" top="12.0" />
+            </padding>
+        </VBox>
+    </children>
+</HBox>

@@ -4,18 +4,16 @@ import com.esprit.autismo.services.ServiceDon;
 import com.esprit.autismo.services.ServiceEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 public class DisplayEvents {
@@ -69,7 +67,11 @@ public class DisplayEvents {
 
                 Button viewButton = new Button("add Don");
                 viewButton.setOnAction(event -> {
-                    navigateToAddDon(e.getId());
+                    System.out.println("--------- hani fi butooonnn to add  don  function  ---------- ");
+
+                    navigateToAddDon(eventsVBox,e.getId());
+                    System.out.println("--------- hani fi kmmlt to add  don  function  ---------- ");
+
                 });
 
 
@@ -91,9 +93,10 @@ public class DisplayEvents {
         }
     }
 
-    private void navigateToAddDon(Long eventId) {
+    private void navigateToAddDon(Node s, Long eventId) {
+        System.out.println("--------- hani fi navigate to add  don  function  ---------- ");
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("addDon.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/addDon.fxml"));
             Parent root = loader.load();
 
             // Pass the event ID to the controller of the new screen
@@ -101,15 +104,11 @@ public class DisplayEvents {
             addDonController.getEventId(eventId);
             System.out.println(eventId);
 
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            // Get the current scene and set the new root
+            Scene currentScene = s.getScene(); // Assuming scene1Button is a node in the current scene
+            currentScene.setRoot(root);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
-
-
-
-
 }

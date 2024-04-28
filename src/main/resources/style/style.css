@@ -1,0 +1,140 @@
+/*side bar*/
+.en_savoir_plus{
+    -fx-background-color: #01D6C3;
+    -fx-border-radius: 20px;
+    -fx-font-size: 20px;
+}
+.en_savoir_plus:hover{
+    background-color: #f1f1f1;
+}
+
+.option{
+    -fx-border-radius: 12;
+    -fx-font-family: "Inter";
+    -fx-text-fill: #8DA1B5;
+    -fx-font-size: 20px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 12;
+    -fx-background-color: transparent;
+    -fx-text-decoration: none;
+}
+.option:hover{
+    -fx-background-color: #f1f1f1;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-cursor: pointer;
+}
+.option .icon {
+    -fx-font-size: 20px;
+}
+/*end sidebar*/
+
+.btn_primary {
+    -fx-background-color: linear-gradient(to bottom right, #68d391, #4f46e5);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 4px;
+    -fx-text-fill: #fff;
+    -fx-border-color: transparent;
+    -fx-padding: 10px 20px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-border-radius: 4px;
+    -fx-effect: null;
+    -fx-transition-duration: 722ms;
+}
+
+.btn_primary:hover {
+    -fx-text-fill: #000;
+}
+
+.cancel:hover {
+    -fx-transition-duration: 722ms;
+    -fx-translate-y: -4px;
+}
+
+.container {
+    -fx-border-color: #ccc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-color: #FFF;
+    -fx-padding: 8px;
+    -fx-effect: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    -fx-min-height: -fx-fit-content;
+}
+.Card {
+    -fx-border-color: #dee3f3;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #fbfcff;
+    -fx-padding: 8px;
+    -fx-effect: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.delete-button {
+    -fx-background-color: #c0392b;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.delete-button:hover {
+    -fx-background-color: #e74c3c;
+}
+
+.update-button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333333;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-border-radius: 4px;
+}
+
+.update-button:hover {
+    -fx-background-color: #cccccc;
+}
+.update-button:pressed .delete-button:pressed {
+    -fx-background-color: #b3b3b3;
+}
+.label{
+    -fx-font-size: 20px;
+    -fx-margin: 10px auto;
+}
+
+.text_field{
+    -fx-font-size: 20px;
+    -fx-margin: 10px auto;
+}
+.image_view {
+    -fx-pref-width: 55px;
+    -fx-pref-height: 55px;
+    -fx-border-color: #000000; /* Set a border color for the image view */
+    -fx-border-width: 2px; /* Set the border width */
+    -fx-border-radius: 50%;
+    -fx-background-color: #ffffff;
+}
+
+.title{
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+    -fx-fill: #333333;
+    -fx-alignment: center;
+    -fx-margin: 20px 0;
+}
+.form {
+    -fx-border-radius: 12px;
+    -fx-background-color: #FFF;
+    -fx-padding: 8px;
+    -fx-border-width: 1px;
+    -fx-border-color: #ccc;
+    -fx-border-style: solid;
+}
+.name{
+    -fx-font-family: Amasis MT Pro Medium;
+}
