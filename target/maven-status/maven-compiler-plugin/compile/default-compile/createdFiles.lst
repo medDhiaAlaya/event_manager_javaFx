@@ -15,6 +15,7 @@ com\esprit\autismo\controllers\BackOffice.class
 com\esprit\autismo\services\ServiceParticipation.class
 com\esprit\autismo\controllers\DisplayDons.class
 com\esprit\autismo\utiles\Navigate.class
+com\esprit\autismo\controllers\EventDetails.class
 com\esprit\autismo\controllers\ListEvent.class
 com\esprit\autismo\models\Event.class
 com\esprit\autismo\Main.class

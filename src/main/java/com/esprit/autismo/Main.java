@@ -126,7 +126,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         // Load the FXML file
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene.fxml"));
         Parent root = loader.load();
 
         // Set up the stage

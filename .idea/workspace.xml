@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11bdbc1e-36d5-4723-b191-6a694f003f61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/AddEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/DisplayEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Controller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/controllers/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/autismo/services/ServiceEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/AddEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/DisplayEvents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/scene.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/controllers/Payment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/autismo/services/ServiceEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/payment.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
