@@ -12,20 +12,17 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
-import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.sql.Date;
 
-public class AddEvent {
+public class UpdateEvent {
 
     @FXML
     private DatePicker tfDateToEnd;
@@ -45,26 +42,28 @@ public class AddEvent {
     @FXML
     private TextField tfType;
 
-    Event e = new Event();
+    Event e ;
 
     @FXML
     void add_button(ActionEvent event) {
+        // remplir les field avec les ancient valeurs
+
         e.setTitle(tfTitle.getText());
         e.setDescription(tfDescription.getText());
         e.setType(tfType.getText());
-
         Date startDate = Date.valueOf(tfDateToStart.getValue());
         e.setStartDate(startDate);
         Date endDate = Date.valueOf(tfDateToEnd.getValue());
         e.setEndDate(endDate);
-
         try{
             ServiceEvent serviceEvent=new ServiceEvent();
-            serviceEvent.addEvent(e);
-            showAlert("Event Added", "The event has been successfully added.");
+            serviceEvent.updateEvent(e);
+            showAlert("Event Updated", "The event has been successfully added.");
+
+
         }catch (Exception eu){
             System.out.println(eu.getMessage());
-            showAlert("Event failed", "famma ghalta owwwww.");
+            showAlert("Event Updated", "famma ghalta owwwww.");
 
         }
     }
@@ -104,10 +103,9 @@ public class AddEvent {
         alert.showAndWait();
     }
 
-
     public void goToDisplay(MouseEvent mouseEvent) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/displayEvents.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/backendEventsList.fxml"));
             Parent parent = loader.load();
             ListEvent displayEventsController = loader.getController();
             // displayEventsController.setData(data);
@@ -115,6 +113,7 @@ public class AddEvent {
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.show();
+            //stage.show();
         } catch (IOException e) {
             e.printStackTrace();
             showAlert("Error", "Failed to load displayEvents.fxml");
@@ -124,4 +123,11 @@ public class AddEvent {
     }
 
 
+    public void setData(Event event) {
+        this.e=event;
+        tfTitle.setText(e.getTitle());
+        tfDescription.setText(e.getDescription());
+        tfType.setText(e.getType());
+
+    }
 }

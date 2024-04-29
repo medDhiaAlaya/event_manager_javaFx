@@ -5,8 +5,6 @@ import com.esprit.autismo.models.Event;
 import com.esprit.autismo.utiles.MyDataBase;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 
@@ -90,6 +88,26 @@ public class ServiceEvent implements IEvent<Event> {
         }
         return dons;
     }
+    public double getDonsAmountForEvent(long eventId) throws SQLException {
+        double sum = 0;
+        String qry = "SELECT donated_money FROM don WHERE id_event_id = ?";
+        try (PreparedStatement pstm = cnx.prepareStatement(qry)) {
+            pstm.setLong(1, eventId);
+            try (ResultSet rs = pstm.executeQuery()) {
+                while (rs.next()) {
+                    double donatedMoney = rs.getDouble("donated_money");
+                    sum += donatedMoney;
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            throw e; // Rethrow the exception to handle it in the caller
+        }
+        return sum;
+    }
+
+
+
 
 
 
@@ -97,8 +115,18 @@ public class ServiceEvent implements IEvent<Event> {
     @Override
     public void deleteEvent(long eventId) {
         String query = "DELETE FROM event WHERE id=?";
+        // Delete associated donations
+
+
         try (PreparedStatement statement = cnx.prepareStatement(query)) {
             statement.setLong(1, eventId);
+            ServiceDon serviceDon= new ServiceDon();
+            List<Don> dons=getEventById(eventId).getDons();
+            for (Don d:dons) {
+                serviceDon.deleteDon(d);
+            }
+
+
             statement.executeUpdate();
             System.out.println("event deleted");
         } catch (SQLException e) {

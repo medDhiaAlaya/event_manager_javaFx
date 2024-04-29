@@ -59,7 +59,7 @@
     -fx-border-width: 2px;
     -fx-border-radius: 12px;
     -fx-background-color: #FFF;
-    -fx-padding: 8px;
+    -fx-padding: 10px;
     -fx-effect: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     -fx-min-height: -fx-fit-content;
 }

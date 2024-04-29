@@ -107,3 +107,41 @@ public static void main(String[] args){
 
 }
 }
+
+/*
+import com.esprit.autismo.controllers.Controller;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+//import org.opencv.core.Core;
+
+public class Main extends Application {
+
+    static {
+        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        // Load the FXML file
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene.fxml"));
+        Parent root = loader.load();
+
+        // Set up the stage
+        primaryStage.setTitle("Image to 3D");
+        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.show();
+
+        // Get the controller
+        Controller controller = loader.getController();
+
+        // Initialize the 3D content
+        controller.initialize3DContent();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+} */
